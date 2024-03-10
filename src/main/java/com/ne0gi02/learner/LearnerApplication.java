@@ -10,7 +10,8 @@ public class LearnerApplication {
 	public static void main(String[] args) {
 		var context = SpringApplication.run(LearnerApplication.class, args);
 
-		MyFirstClass myFirstClass = context.getBean(MyFirstClass.class);
+		// MyFirstClass myFirstClass = new MyFirstClass(); same working as below line
+		MyFirstClass myFirstClass = context.getBean(MyFirstClass.class);// using context to get the bean
 		System.out.println(myFirstClass.sayHello());
 	}
 
