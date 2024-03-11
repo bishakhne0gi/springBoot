@@ -15,6 +15,13 @@ public class LearnerApplication {
 
 		MyFirstService myFirstService = context.getBean(MyFirstService.class);
 		System.out.println(myFirstService.tellAStory());
+
+		System.out.println(myFirstService.getJavaVersion());
+		System.out.println(myFirstService.getOSName());
+		System.out.println(myFirstService.getcustomProperty());
+
+		System.out.println(myFirstService.getCustomPropertyFromAnotherFile());
+
 	}
 
 }
